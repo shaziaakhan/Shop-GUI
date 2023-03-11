@@ -2,8 +2,6 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.Box;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -15,7 +13,7 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 {
 	JPanel p1,p2;
 	JList j1;
-	JLabel l1,l2,l3,l4,l5,l6,l7; 
+	JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10; 
 	JButton b1,b2,b3;
 	int spen=100,spencil=150,spaper=150,seraser=75,ssharpener=75,sruler=120;
 	double p,cart=0.0;
@@ -93,7 +91,7 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
     @Override
 	public void actionPerformed(ActionEvent e) 
 	      {
-	       // TODO Auto-generated method stub
+	       //TODO Auto-generated method stub
 		     if(e.getSource()==b1)
 		     {
 		    	 cart+=p;
@@ -140,6 +138,22 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 		 		l6.setBounds(10, 90, 500, 50);
 		 		l6.setFont(new Font("Serif", Font.PLAIN,20));
 		 		p2.add(l6);
+
+				l8=new JLabel("Item");
+				l8.setBounds(20, 120, 50, 50);
+				l8.setFont(new Font("Serif", Font.PLAIN,14));
+				p2.add(l8);
+
+				l9=new JLabel("Quantity");
+				l9.setBounds(210, 120, 50, 50);
+				l9.setFont(new Font("Serif", Font.PLAIN,14));
+				p2.add(l9);
+
+				l10=new JLabel("Total");
+				l10.setBounds(410, 120, 50, 50);
+				l10.setFont(new Font("Serif", Font.PLAIN,14));
+				p2.add(l10);
+
 		     }
 		     else
 		     {
@@ -157,6 +171,7 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 		     {
 		    	 l1.setText("Price of Pencil is $2.99");
 		    	 p=2.99;
+				 l8.setText("");
 		     }
 		     else if(x=="Pen")
 		     {

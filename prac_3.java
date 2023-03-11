@@ -13,7 +13,7 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 {
 	JPanel p1,p2;
 	JList j1,j2;
-	JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,l14,l15; 
+	JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,l14,l15,l16; 
 	JButton b1,b2,b3;
 	int spen=100,spencil=150,spaper=150,seraser=75,ssharpener=75,sruler=120;
 	int c1=0,c2=0,c3=0,c4=0,c5=0,c6=0;
@@ -148,17 +148,17 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 
 				l8=new JLabel("Item");
 				l8.setBounds(20, 120, 50, 50);
-				l8.setFont(new Font("Serif", Font.PLAIN,14));
+				l8.setFont(new Font("Serif", Font.PLAIN,16));
 				p2.add(l8);
 
 				l9=new JLabel("Quantity");
-				l9.setBounds(210, 120, 50, 50);
-				l9.setFont(new Font("Serif", Font.PLAIN,14));
+				l9.setBounds(210, 120, 60, 50);
+				l9.setFont(new Font("Serif", Font.PLAIN,16));
 				p2.add(l9);
 
 				l10=new JLabel("Total");
 				l10.setBounds(410, 120, 50, 50);
-				l10.setFont(new Font("Serif", Font.PLAIN,14));
+				l10.setFont(new Font("Serif", Font.PLAIN,16));
 				p2.add(l10);
 
 				String str[]= {"Pencil","Pen","Paper","Eraser","Sharpener","Ruler"};
@@ -171,7 +171,41 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 				j2.addListSelectionListener(this);
 				p2.add(j2);
 
+				l11=new JLabel();
+				l11.setText(Integer.toString(c1));
+				l11.setBounds(210, 158, 50, 50);
+				l11.setFont(new Font("Serif", Font.PLAIN,16));
+				p2.add(l11);
 
+				l12=new JLabel();
+				l12.setText(Integer.toString(c2));
+				l12.setBounds(210, 180, 50, 50);
+				l12.setFont(new Font("Serif", Font.PLAIN,16));
+				p2.add(l12);
+				
+				l13=new JLabel();
+				l13.setText(Integer.toString(c3));
+				l13.setBounds(210, 200, 50, 50);
+				l13.setFont(new Font("Serif", Font.PLAIN,16));
+				p2.add(l13);
+
+				l14=new JLabel();
+				l14.setText(Integer.toString(c4));
+				l14.setBounds(210, 222, 50, 50);
+				l14.setFont(new Font("Serif", Font.PLAIN,16));
+				p2.add(l14);
+
+				l15=new JLabel();
+				l15.setText(Integer.toString(c5));
+				l15.setBounds(210, 243, 50, 50);
+				l15.setFont(new Font("Serif", Font.PLAIN,16));
+				p2.add(l15);
+
+				l16=new JLabel();
+				l16.setText(Integer.toString(c6));
+				l16.setBounds(210, 265, 50, 50);
+				l16.setFont(new Font("Serif", Font.PLAIN,16));
+				p2.add(l16);
 		     }
 		     else
 		     {

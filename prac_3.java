@@ -12,10 +12,11 @@ import javax.swing.event.ListSelectionListener;
 public class prac_3 extends JFrame implements ListSelectionListener,ActionListener
 {
 	JPanel p1,p2;
-	JList j1;
-	JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10; 
+	JList j1,j2;
+	JLabel l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,l14,l15; 
 	JButton b1,b2,b3;
 	int spen=100,spencil=150,spaper=150,seraser=75,ssharpener=75,sruler=120;
+	int c1=0,c2=0,c3=0,c4=0,c5=0,c6=0;
 	double p,cart=0.0;
 	String x;
 	prac_3()
@@ -100,33 +101,39 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 		    	 {
 		    		 spencil=spencil-1;
 		    		 l3.setText("Available Stock: "+spencil);
+					 c1++;
 		    	 }
 		    	 else if(x=="Pen")
 		    	 {
 		    		 spen=spen-1;
 		    		 l3.setText("Available Stock: "+spen);
+					 c2++;
 		    	 }
 		    		 
 		    	 else if(x=="Paper")
 		    	 {
 		    		 spaper=spaper-1;
 		    		 l3.setText("Available Stock: "+spaper);
+					 c3++;
 		    	 }
 		    	 
 		    	 else if(x=="Eraser")
 		    	 {
 		    		 seraser=seraser-1;
 		    		 l3.setText("Available Stock: "+seraser);
+					 c4++;
 		    	 }
 		    	 else if(x=="Sharpener")
 		    	 {	
 		    		 ssharpener=ssharpener-1;
 		    		 l3.setText("Available Stock: "+ssharpener);
+					 c5++;
 		    	 }
 		    	 else
 		    	 { 
 		    		 sruler=sruler-1;
 		    		 l3.setText("Available Stock: "+sruler);
+					 c6++;
 		    	 }
 		     }
 		     else if(e.getSource()==b2)
@@ -153,6 +160,17 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 				l10.setBounds(410, 120, 50, 50);
 				l10.setFont(new Font("Serif", Font.PLAIN,14));
 				p2.add(l10);
+
+				String str[]= {"Pencil","Pen","Paper","Eraser","Sharpener","Ruler"};
+				j2=new JList(str);
+				j2.setBounds(20,170,100, 135);
+				j2.setFont(new Font("Serif",Font.BOLD,15));
+				j2.setLayout(null);
+				j2.setBackground(Color.cyan);
+				j2.setEnabled(false);
+				j2.addListSelectionListener(this);
+				p2.add(j2);
+
 
 		     }
 		     else

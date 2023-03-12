@@ -248,9 +248,9 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 		 		l16.setFont(new Font("Serif", Font.PLAIN,20));
 		 		p2.add(l16);
 
-				l17=new JLabel("Total cost: $"+cart);
+				l17=new JLabel("Total cost: $"+String.format("%.2f",cart));
 		 		l17.setBounds(10, 360, 200, 50);
-		 		l17.setFont(new Font("Serif", Font.PLAIN,20));
+		 		l17.setFont(new Font("Serif", Font.BOLD,20));
 		 		p2.add(l17);
 		     }
 		     else

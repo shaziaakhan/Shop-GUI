@@ -109,8 +109,7 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 		    		 spen=spen-1;
 		    		 l3.setText("Available Stock: "+spen);
 					 c2++;
-		    	 }
-		    		 
+		    	 }		    		 
 		    	 else if(x=="Paper")
 		    	 {
 		    		 spaper=spaper-1;
@@ -249,7 +248,10 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 		 		l16.setFont(new Font("Serif", Font.PLAIN,20));
 		 		p2.add(l16);
 
-				
+				l17=new JLabel("Total cost: $"+cart);
+		 		l17.setBounds(10, 360, 200, 50);
+		 		l17.setFont(new Font("Serif", Font.PLAIN,20));
+		 		p2.add(l17);
 		     }
 		     else
 		     {
@@ -263,6 +265,13 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 				 l14.setText("");
 				 l15.setText("");
 				 l16.setText("");
+				 l17.setText("");
+				 t1.setText("");
+				 t2.setText("");
+				 t3.setText("");
+				 t4.setText("");
+				 t5.setText("");
+				 t6.setText("");
 		     }
 	      }
 	   @Override

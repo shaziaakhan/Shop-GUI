@@ -22,7 +22,7 @@ public class prac_3 extends JFrame implements ListSelectionListener,ActionListen
 	String x;
 	prac_3()
 	{
-		super("Stationary Shop");
+		super("ABC Stationary Shop");
 		setSize(1000,1000);
 		setLayout(null);
 		setVisible(true);
